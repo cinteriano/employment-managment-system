@@ -7,30 +7,30 @@ USE employment_db;
 
 CREATE TABLE department (
   
-  id INT PRIMARY KEY,
-  name VARCHAR(30)
-  
+  id INT,
+  name VARCHAR(30),
+  PRIMARY KEY (id)
   
 );
 
 CREATE TABLE role (
   
-  id INT PRIMARY KEY,
-  title VARCHAR(30)
-  salary DECIMAL
-  department_id INT
-  
+  id INT ,
+  title VARCHAR(30),
+  salary DECIMAL,
+  department_id INT,
+  PRIMARY KEY (id)
   
 );
 
 CREATE TABLE employee (
   
-  id INT PRIMARY KEY,
+  id INT AUTO_INCREMENT,
   first_name VARCHAR(30)
   last_name VARCHAR(30)
   role_id INT
   manager_id INT
-  
+  PRIMARY KEY (id)
 );
 
 
@@ -66,3 +66,24 @@ INSERT INTO role (id, title, salary, department_id)
 VALUES (3, 'quality-assistant', 120000, 4);
 
 
+INSERT INTO department (id, name) values (1,'Production');
+INSERT INTO department (id, name) values (2,'Engineering');
+INSERT INTO department (id, name) values (3,'Quality Control');
+
+
+INSERT INTO employee (id, first_name, last_name, role_id, manager_id) values (1, 'tom', 'riddle', 1, 1);
+INSERT INTO employee (id, first_name, last_name, role_id, manager_id) values (2, 'patrick', 'star', 2, NULL);
+INSERT INTO employee (id, first_name, last_name, role_id, manager_id) values (3, 'billy', 'madison', 3, NULL);
+INSERT INTO employee (id, first_name, last_name, role_id, manager_id) values (4, 'arnold', 'schwarzenegger', 4, NULL);
+INSERT INTO employee (id, first_name, last_name, role_id, manager_id) values (5, 'john', 'connor', 5, 2);
+INSERT INTO employee (id, first_name, last_name, role_id, manager_id) values (6, 'fred', 'flinstone', 6, NULL);
+INSERT INTO employee (id, first_name, last_name, role_id, manager_id) values (7, 'homer', 'simpson', 7, NULL);
+INSERT INTO employee (id, first_name, last_name, role_id, manager_id) values (8, 'arthur', 'morgan', 8, NULL);
+INSERT INTO employee (id, first_name, last_name, role_id, manager_id) values (9, 'bruce', 'wayne', 9, 3);
+INSERT INTO employee (id, first_name, last_name, role_id, manager_id) values (10, 'peter', 'parker', 10, NULL);
+INSERT INTO employee (id, first_name, last_name, role_id, manager_id) values (11, 'john', 'marston', 11, NULL);
+INSERT INTO employee (id, first_name, last_name, role_id, manager_id) values (12, 'david', 'gilmore', 12, NULL);
+
+SELECT * FROM department;
+SELECT * FROM role;
+SELECT * FROM employee;

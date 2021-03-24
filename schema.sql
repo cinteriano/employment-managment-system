@@ -5,17 +5,42 @@ CREATE DATABASE employment_db;
 
 USE employment_db;
 
-CREATE TABLE people (
+CREATE TABLE department (
   
-  id INTEGER(11) AUTO_INCREMENT NOT NULL,
+  id INT PRIMARY KEY,
+  name VARCHAR(30)
   
-  name VARCHAR(30) NOT NULL,
   
-  employee_job BOOLEAN NOT NULL,
-
-  employee_name VARCHAR(30),
-  
-  employee_age INTEGER(10),
-  
-  PRIMARY KEY (id)
 );
+
+CREATE TABLE role (
+  
+  id INT PRIMARY KEY,
+  title VARCHAR(30)
+  
+  
+);
+
+CREATE TABLE employee (
+  
+  id INT PRIMARY KEY,
+  
+  
+);
+
+
+
+
+
+
+INSERT INTO people (name, has_pet, pet_name, pet_age)
+VALUES ("Ahmed", true, "Rockington", 100);
+
+INSERT INTO people (name, has_pet, pet_name, pet_age)
+VALUES ("Ahmed", true, "Rockington", 100);
+
+INSERT INTO people (name, has_pet, pet_name, pet_age)
+VALUES ("Jacob",true,"Misty",10);
+
+INSERT INTO people (name, has_pet)
+VALUES ("Peter", false);

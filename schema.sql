@@ -39,15 +39,30 @@ CREATE TABLE employee (
 
 
 INSERT INTO role (id, title, salary, department_id)
-VALUES (1, 'production lead', 120000, 2);
-
+VALUES (1, 'production manager', 120000, 1);
 INSERT INTO role (id, title, salary, department_id)
 VALUES (1, 'production lead', 120000, 2);
-
 INSERT INTO role (id, title, salary, department_id)
-VALUES (1, 'production lead', 120000, 2);
-
+VALUES (1, 'assembler', 120000, 3);
 INSERT INTO role (id, title, salary, department_id)
-VALUES (1, 'production lead', 120000, 2);
+VALUES (1, 'assistant', 120000, 4);
+-- 
+INSERT INTO role (id, title, salary, department_id)
+VALUES (2, 'engineering manager', 120000, 1);
+INSERT INTO role (id, title, salary, department_id)
+VALUES (2, 'lead engineer', 120000, 2);
+INSERT INTO role (id, title, salary, department_id)
+VALUES (2, 'schematics', 120000, 3);
+INSERT INTO role (id, title, salary, department_id)
+VALUES (2, 'grunt', 120000, 4);
+-- 
+INSERT INTO role (id, title, salary, department_id)
+VALUES (3, 'quality manager', 120000, 1);
+INSERT INTO role (id, title, salary, department_id)
+VALUES (3, 'inspector', 120000, 2);
+INSERT INTO role (id, title, salary, department_id)
+VALUES (3, 'co-inspector', 120000, 3);
+INSERT INTO role (id, title, salary, department_id)
+VALUES (3, 'quality-assistant', 120000, 4);
 
 

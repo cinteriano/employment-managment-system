@@ -38,14 +38,16 @@ CREATE TABLE employee (
 
 
 
-INSERT INTO people (name, has_pet, pet_name, pet_age)
-VALUES ("Ahmed", true, "Rockington", 100);
+INSERT INTO role (id, title, salary, department_id)
+VALUES (1, 'production lead', 120000, 2);
 
-INSERT INTO people (name, has_pet, pet_name, pet_age)
-VALUES ("Ahmed", true, "Rockington", 100);
+INSERT INTO role (id, title, salary, department_id)
+VALUES (1, 'production lead', 120000, 2);
 
-INSERT INTO people (name, has_pet, pet_name, pet_age)
-VALUES ("Jacob",true,"Misty",10);
+INSERT INTO role (id, title, salary, department_id)
+VALUES (1, 'production lead', 120000, 2);
 
-INSERT INTO people (name, has_pet)
-VALUES ("Peter", false);
+INSERT INTO role (id, title, salary, department_id)
+VALUES (1, 'production lead', 120000, 2);
+
+
